@@ -14,6 +14,7 @@ if (isset($_SESSION['username'])) {
 
 <head>
 	<title><?php echo $user; ?> - Pharmacy Management System</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style/ms.css">
 	<link rel="stylesheet" href="style/s.css" type="text/css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="style/ds.css" media="screen" />
@@ -23,7 +24,7 @@ if (isset($_SESSION['username'])) {
 	<script src="js/function.js" type="text/javascript"></script>
 	<style>
 		#left_column {
-			height: 470px;
+			height: 100vh;
 		}
 	</style>
 </head>
@@ -33,6 +34,7 @@ if (isset($_SESSION['username'])) {
 		<div id="header">
 			<h1>Pharmacy Management System</h1>
 		</div>
+
 		<div id="left_column">
 			<div id="button">
 				<ul>
@@ -80,7 +82,6 @@ if (isset($_SESSION['username'])) {
 				</a>
 			</div>
 		</div>
-		<div id="footer" align="Center"> </div>
 	</div>
 </body>
 

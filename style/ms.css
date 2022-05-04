@@ -5,8 +5,8 @@ html * {
 }
 
 body {
-  margin-top: 0px;
-  padding-top: 0px;
+  margin: 0px;
+  padding: 0px;
   background-color: #f1f1f1;
 }
 #content {
@@ -19,7 +19,7 @@ body {
 #header {
   /* width: 900px; */
   height: 96px;
-  background: #62737b;
+  background: #1A2238;
 }
 #header h1 {
   margin: 0px;
@@ -37,7 +37,7 @@ body {
   float: left;
   width: 200px;
   height: 501px;
-  background: #62737b;
+  background: #1A2238;
   /* border-right: solid 2px blue; */
 }
 
@@ -93,7 +93,8 @@ html > body #button li a {
 #footer {
   /* width: 900px; */
   height: 55px;
-  background: #62737b;
+  background: #1A2238;
   clear: all;
+  bottom: 0px;
   /* border-top: solid 1px rgb(235, 235, 235); */
 }
