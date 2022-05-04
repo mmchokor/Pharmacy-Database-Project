@@ -70,56 +70,57 @@ echo <<<LOGIN
 <html>
 <head>
 <title>Pharmacy Management System</title>
-<link rel="stylesheet" type="text/css" href="style/ml.css">
-
-<style>
-#content {
-height: auto;
-}
-#main{
-height: auto;}
-
-
-
-</style>
-
-
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
-<div id="content">
-<div id="header">
-
-<h1>Pharmacy Management System</h1>
+<div class="jumbotron text-center bg-dark bg-opacity-60 text-light pb-3 pt-3">
+	<h1>Pharmacy Management System</h1>
+	<p>This is a simple pharmacy management system</p>
 </div>
-<div id="main">
 
-  <section class="container">
-  
-     <div class="login">
-	 <img src="images/ulg.png">
-      <!--<h1><center>Login here</center></h1>-->
-	  $message
-	  <form method="post" action="index.php" align="center" >
-	  
-		<p><input type="text" name="username" value="" placeholder="Username" required></p>
-        <p><input type="password" name="password" value="" placeholder="Password" required></p>
-		<p><select name="position">
-		<option>Login as......</option>
-			<option>Admin</option>
-			<option>Manager</option>
-			<option>Pharmacist</option>
-			<option>Cashier</option>
+
+<div class="container pb-4">
+	<div class="row pt-4">
+
+		<div class="col-md-4"></div>
+		<div class="col-md-4" align="center">
+			<img src="images/ulg.png">
+			<!--<h1><center>Login here</center></h1>-->
+			$message
+			<form method="post" action="index.php" align="center" class="pt-4">
 			
-			</select></p>
-        <p class="submit"><input type="submit" name="submit" value="Login"></p>
-      </form>
-    </div>
-    </section>
+				<p><input type="text" name="username" value="" placeholder="Username" class="form-control" required></p>
+				<p><input type="password" name="password" value="" placeholder="Password" class="form-control"  required></p>
+				<p><select name="position" class="form-control">
+				<option>Login as</option>
+					<option>Admin</option>
+					<option>Manager</option>
+					<option>Pharmacist</option>
+					<option>Cashier</option>
+					
+					</select></p>
+
+				<input type="submit" name="submit" value="Login" class="btn btn-primary btn-block">
+					
+			</form>
+		</div>
+		<div class="col-md-4"></div>
+
+	</div>
 </div>
-<div id="footer" align="Center"> </div>
+
+<div class="container-fluid">
+	<div class="row bg-dark bg-opacity-60 text-light pb-3 pt-3">
+		<div class="col-md-12">
+			<center>
+				<p class="text-center">&copy; Copyright 2022</p>
+			</center>
+		</div>
+	</div>
 </div>
+
 
 </body>
 </html>
